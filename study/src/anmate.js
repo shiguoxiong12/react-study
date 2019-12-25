@@ -16,9 +16,11 @@ class Amate extends React.Component{
         return(
             <Fragment>
             <div className={this.state.show ? 'show' : 'hide'}>hello</div>
-              <button onClick={()=> {this.setState({
+              <button onClick={()=> {
+                  this.setState({
                   show:!this.state.show
-              })  }}>toogle</button>
+                 })  }}
+              >toogle</button>
             </Fragment>
         )
     }

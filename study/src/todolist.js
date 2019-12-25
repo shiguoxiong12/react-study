@@ -33,6 +33,9 @@ class Todolist extends React.Component {
       value:v.target.value
     })
   }
+  componentDidMount(){ //裡面請求ajax
+
+  }
   delete(index){
     const list=[...this.state.todolist]
     list.splice(index,1);  //刪除數組指定下標的一項

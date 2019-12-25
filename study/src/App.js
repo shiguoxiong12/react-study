@@ -8,27 +8,20 @@ import React from 'react';
 import './App.css';
 import Todolist from './todolist'
 import Login from './views/login'
-import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom'
+//import {HashRouter, Switch, Route } from 'react-router-dom';
 import Amate from './anmate'
+import Header from './components/header'
+import Main from './views/main'
 function App() {
   return (
-    //  <div>
-    //     <Todolist/>
-    //     <Amate/>
-    //  </div>
-    <Router>
-    <Switch>
-        {/* <Route exact path="/" render={ () => <Redirect to="/apply" push /> } />
-        <Route path="/404" component={ ErrorPage } />
-        <Route path="/login" render={() => {
-            return this.props.id_token ?  <Redirect to="/" /> : <Login />
-        }} />
-        <Route render={ () => <IndexLayout /> } /> */}
-          {/* <Route path="/" component={ Login } />
-
-    </Switch>
-</Router>
-  );
-} */}
+    <div className="App">
+         <HashRouter>
+            <Header/>
+            <Main/>
+         </HashRouter>
+    </div>
+  )
+} 
 
 export default App;
